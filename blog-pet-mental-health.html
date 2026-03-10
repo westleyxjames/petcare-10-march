@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Your Pet's Mental Health - FurryFriends Blog</title>
+  <meta name="description" content="Explore the importance of mental stimulation and enrichment activities to keep your pet happy, engaged, and emotionally balanced.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="padding: 5rem 1rem 4rem;">
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <a href="blog.html" class="back-link">
+        <i data-lucide="arrow-left" class="icon"></i>
+        Back to Blog
+      </a>
+
+      <div style="margin: 1.5rem 0;">
+        <span class="badge badge-orange">Wellness</span>
+      </div>
+
+      <h1 style="font-size: 2.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">
+        Understanding Your Pet's Mental Health and Enrichment Needs
+      </h1>
+
+      <div class="article-meta">
+        <span><i data-lucide="calendar" class="icon"></i> February 22, 2026</span>
+        <span><i data-lucide="clock" class="icon"></i> 6 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Image -->
+  <section style="padding: 2rem 1rem;">
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <div class="shadow-lg" style="border-radius: 1rem; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1746814881142-4324f28db080?w=1080" alt="Pet Mental Health" style="width: 100%; height: 24rem; object-fit: cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article style="padding: 2rem 1rem 4rem;">
+    <div class="article-content">
+      <p class="lead">
+        Mental health is just as important as physical health for our pets. Learn how to recognize signs of stress, anxiety, and boredom, and discover enrichment activities that promote emotional well-being.
+      </p>
+
+      <h2>Why Pet Mental Health Matters</h2>
+      <p>
+        Pets experience a wide range of emotions and can suffer from mental health issues just like humans. A mentally healthy pet is:
+      </p>
+      <ul>
+        <li>Happier and more content</li>
+        <li>Better behaved</li>
+        <li>Less destructive</li>
+        <li>More resilient to stress</li>
+        <li>Physically healthier overall</li>
+      </ul>
+
+      <h2>Signs of Poor Mental Health</h2>
+
+      <h3>Anxiety and Stress</h3>
+      <ul>
+        <li>Excessive panting or drooling</li>
+        <li>Pacing or restlessness</li>
+        <li>Trembling or shaking</li>
+        <li>Hiding or withdrawal</li>
+        <li>Aggression or irritability</li>
+        <li>Loss of appetite</li>
+        <li>Excessive grooming or scratching</li>
+      </ul>
+
+      <h3>Depression</h3>
+      <ul>
+        <li>Lethargy and lack of interest in activities</li>
+        <li>Changes in sleeping patterns</li>
+        <li>Loss of appetite or overeating</li>
+        <li>Avoiding interaction</li>
+        <li>Lack of grooming</li>
+      </ul>
+
+      <h3>Boredom</h3>
+      <ul>
+        <li>Destructive behavior (chewing, digging, scratching)</li>
+        <li>Excessive barking or meowing</li>
+        <li>Attention-seeking behaviors</li>
+        <li>Restlessness</li>
+        <li>Overeating</li>
+        <li>Compulsive behaviors (tail chasing, excessive licking)</li>
+      </ul>
+
+      <h2>Common Causes of Mental Health Issues</h2>
+
+      <h3>Environmental Factors</h3>
+      <ul>
+        <li><strong>Lack of stimulation:</strong> Insufficient mental and physical activity</li>
+        <li><strong>Changes in routine:</strong> Moving, new family members, schedule changes</li>
+        <li><strong>Isolation:</strong> Left alone for long periods</li>
+        <li><strong>Loud noises:</strong> Thunderstorms, fireworks, construction</li>
+        <li><strong>Overcrowding:</strong> Too many pets in one space</li>
+      </ul>
+
+      <h3>Past Trauma</h3>
+      <ul>
+        <li>Abuse or neglect</li>
+        <li>Abandonment</li>
+        <li>Previous frightening experiences</li>
+        <li>Separation from mother too early</li>
+      </ul>
+
+      <h3>Medical Issues</h3>
+      <ul>
+        <li>Pain or discomfort</li>
+        <li>Hormonal imbalances</li>
+        <li>Cognitive decline in senior pets</li>
+        <li>Neurological problems</li>
+      </ul>
+
+      <h2>Mental Enrichment Activities</h2>
+
+      <h3>For Dogs</h3>
+      
+      <p><strong>Food Puzzles and Interactive Toys</strong></p>
+      <ul>
+        <li>Kong toys stuffed with treats</li>
+        <li>Puzzle feeders that require problem-solving</li>
+        <li>Snuffle mats for scent work</li>
+        <li>Hide treats around the house for searching games</li>
+      </ul>
+
+      <p><strong>Training and Learning</strong></p>
+      <ul>
+        <li>Teach new tricks regularly</li>
+        <li>Practice obedience commands</li>
+        <li>Try agility courses</li>
+        <li>Scent training games</li>
+      </ul>
+
+      <p><strong>Socialization</strong></p>
+      <ul>
+        <li>Dog park visits</li>
+        <li>Playdates with other dogs</li>
+        <li>Group training classes</li>
+        <li>Dog-friendly outings</li>
+      </ul>
+
+      <p><strong>Sensory Stimulation</strong></p>
+      <ul>
+        <li>Different walking routes</li>
+        <li>Novel textures to explore</li>
+        <li>Safe objects to investigate</li>
+        <li>Supervised outdoor adventures</li>
+      </ul>
+
+      <h3>For Cats</h3>
+
+      <p><strong>Hunting and Foraging</strong></p>
+      <ul>
+        <li>Feather wands and laser pointers</li>
+        <li>Automated toys that move unpredictably</li>
+        <li>Food puzzles and treat balls</li>
+        <li>Hide treats throughout the house</li>
+      </ul>
+
+      <p><strong>Vertical Space</strong></p>
+      <ul>
+        <li>Cat trees and climbing shelves</li>
+        <li>Window perches for bird watching</li>
+        <li>Multiple levels to explore</li>
+        <li>Safe high vantage points</li>
+      </ul>
+
+      <p><strong>Sensory Enrichment</strong></p>
+      <ul>
+        <li>Catnip and silvervine toys</li>
+        <li>Cardboard boxes and paper bags</li>
+        <li>Safe plants (cat grass, catnip)</li>
+        <li>Videos for cats (birds, fish)</li>
+      </ul>
+
+      <p><strong>Interactive Play</strong></p>
+      <ul>
+        <li>15-20 minutes of daily play sessions</li>
+        <li>Vary toys to maintain interest</li>
+        <li>Allow "catching" prey sometimes</li>
+        <li>Play before meals to mimic natural hunting</li>
+      </ul>
+
+      <h2>Creating a Mentally Healthy Environment</h2>
+
+      <h3>Routine and Structure</h3>
+      <ul>
+        <li>Consistent feeding times</li>
+        <li>Regular exercise schedule</li>
+        <li>Predictable daily routines</li>
+        <li>Designated rest times</li>
+      </ul>
+
+      <h3>Safe Spaces</h3>
+      <ul>
+        <li>Quiet retreat area where pet can relax</li>
+        <li>Comfortable bedding</li>
+        <li>Away from high-traffic areas</li>
+        <li>Access to hiding spots for anxious pets</li>
+      </ul>
+
+      <h3>Social Interaction</h3>
+      <ul>
+        <li>Quality time with family members</li>
+        <li>Gentle petting and grooming</li>
+        <li>Positive training sessions</li>
+        <li>Appropriate socialization with other pets</li>
+      </ul>
+
+      <h2>Managing Separation Anxiety</h2>
+
+      <h3>Prevention Strategies</h3>
+      <ul>
+        <li>Practice short departures and returns</li>
+        <li>Don't make leaving/arriving a big deal</li>
+        <li>Leave engaging toys or treats</li>
+        <li>Consider pet camera for interaction</li>
+        <li>Hire pet sitter or use daycare if gone long hours</li>
+      </ul>
+
+      <h3>Desensitization Techniques</h3>
+      <ol>
+        <li>Start with very brief absences (30 seconds)</li>
+        <li>Gradually increase time away</li>
+        <li>Return before pet becomes anxious</li>
+        <li>Reward calm behavior</li>
+        <li>Practice departure cues without leaving</li>
+      </ol>
+
+      <h2>When to Seek Professional Help</h2>
+      <p>
+        Consult your veterinarian or a veterinary behaviorist if:
+      </p>
+      <ul>
+        <li>Behavioral issues are severe or worsening</li>
+        <li>Pet shows signs of depression or extreme anxiety</li>
+        <li>Destructive behavior is unmanageable</li>
+        <li>Aggression poses safety concerns</li>
+        <li>Changes in behavior are sudden or unexplained</li>
+        <li>Home remedies aren't working</li>
+      </ul>
+
+      <h3>Treatment Options</h3>
+      <ul>
+        <li><strong>Behavior modification:</strong> Working with certified trainer or behaviorist</li>
+        <li><strong>Environmental changes:</strong> Adjusting home setup</li>
+        <li><strong>Medication:</strong> Anti-anxiety medications when appropriate</li>
+        <li><strong>Supplements:</strong> Natural calming aids</li>
+        <li><strong>Pheromone therapy:</strong> Calming diffusers or sprays</li>
+      </ul>
+
+      <h2>The Benefits of Mental Enrichment</h2>
+      <p>
+        Regular mental stimulation provides numerous benefits:
+      </p>
+      <ul>
+        <li>Reduces unwanted behaviors</li>
+        <li>Prevents boredom and frustration</li>
+        <li>Builds confidence</li>
+        <li>Strengthens bond with owner</li>
+        <li>Improves cognitive function</li>
+        <li>Promotes better sleep</li>
+        <li>Enhances quality of life</li>
+      </ul>
+
+      <h2>Age-Specific Considerations</h2>
+
+      <h3>Puppies and Kittens</h3>
+      <ul>
+        <li>Critical socialization period (8-16 weeks)</li>
+        <li>Exposure to various people, animals, environments</li>
+        <li>Short, frequent play sessions</li>
+        <li>Gentle handling and positive experiences</li>
+      </ul>
+
+      <h3>Adult Pets</h3>
+      <ul>
+        <li>Maintain consistent enrichment routine</li>
+        <li>Regular exercise and mental challenges</li>
+        <li>Social interaction with compatible animals</li>
+        <li>Ongoing training and learning</li>
+      </ul>
+
+      <h3>Senior Pets</h3>
+      <ul>
+        <li>Adapted activities for physical limitations</li>
+        <li>Mental stimulation to slow cognitive decline</li>
+        <li>Gentle exercise appropriate for age</li>
+        <li>Extra comfort and patience</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+      <p>
+        Investing in your pet's mental health is one of the most important things you can do as a pet owner. By providing appropriate enrichment, addressing emotional needs, and creating a supportive environment, you can help your pet live a happier, more fulfilling life.
+      </p>
+      <p>
+        Remember, every pet is unique. Pay attention to what brings your pet joy and adjust enrichment activities accordingly. A mentally healthy pet is a happy pet!
+      </p>
+
+      <div class="cta-box">
+        <h3>Concerned About Your Pet's Behavior?</h3>
+        <p>Our veterinary team can help assess your pet's mental health and create an enrichment plan.</p>
+        <a href="vet-care.html" class="btn btn-primary">Schedule a Behavioral Consultation</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

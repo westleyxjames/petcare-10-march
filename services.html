@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - FurryFriends CareServices</title>
+  <meta name="description" content="Explore our comprehensive pet care services including dog walking, pet sitting, daycare, grooming, training, and overnight care.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero hero-services">
+    <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    <div class="hero-container">
+      <div class="hero-services-image">
+        <img src="https://images.unsplash.com/photo-1735597403677-2029485b4547?w=600" alt="Professional pet grooming services" class="services-hero-img">
+      </div>
+      <div class="hero-services-content">
+        <h1>Our Services</h1>
+        <p>Comprehensive pet care solutions tailored to meet your furry friend's unique needs</p>
+        <div class="hero-buttons">
+          <button onclick="openLeadPopup()" class="btn btn-primary">Book Now</button>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section>
+    <div class="section-container">
+      <div class="content-medium">
+        
+        <!-- Dog Walking -->
+        <div class="service-detail-card">
+          <img src="https://images.unsplash.com/photo-1760908626856-0171e55b4160?w=1080" alt="Dog Walking">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Dog Walking</h2>
+            <p class="service-detail-text">
+              Our professional dog walkers provide daily exercise and companionship for your furry friends. Whether your dog needs a quick 
+              potty break or an extended adventure, we tailor each walk to your pet's energy level and preferences.
+            </p>
+            <h3 class="service-detail-subtitle">What's Included:</h3>
+            <ul class="check-list">
+              <li>15, 30, or 60-minute walks</li>
+              <li>GPS tracking of routes</li>
+              <li>Fresh water provided</li>
+              <li>Photo updates after each walk</li>
+              <li>Basic training reinforcement</li>
+            </ul>
+            <h3 class="service-detail-subtitle">Perfect For:</h3>
+            <ul class="check-list">
+              <li>Busy professionals</li>
+              <li>High-energy dogs</li>
+              <li>Puppies learning leash manners</li>
+              <li>Senior dogs needing gentle exercise</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pet Sitting -->
+        <div class="service-detail-card">
+          <img src="https://images.unsplash.com/photo-1728055977876-c214b0ddf5e7?w=1080" alt="Pet Sitting">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Pet Sitting</h2>
+            <p class="service-detail-text">
+              Travel with confidence knowing your pets are cared for in the comfort of their own home. Our experienced pet sitters provide 
+              personalized care, maintain your pet's routine, and give you peace of mind while you're away.
+            </p>
+            <h3 class="service-detail-subtitle">Services Include:</h3>
+            <ul class="check-list">
+              <li>Feeding and fresh water</li>
+              <li>Playtime and exercise</li>
+              <li>Medication administration</li>
+              <li>Litter box maintenance</li>
+              <li>Mail and plant care</li>
+              <li>Home security checks</li>
+            </ul>
+            <h3 class="service-detail-subtitle">Ideal For:</h3>
+            <ul class="check-list">
+              <li>Cats who prefer staying home</li>
+              <li>Multiple pets</li>
+              <li>Pets with special needs</li>
+              <li>Extended vacations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pet Day Care -->
+        <div class="service-detail-card">
+          <img src="https://images.unsplash.com/photo-1758426156451-0d05400ecd8e?w=1080" alt="Pet Day Care">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Pet Day Care</h2>
+            <p class="service-detail-text">
+              Give your social pet a fun-filled day of supervised play, exercise, and socialization. Our daycare facility provides a safe, 
+              stimulating environment where dogs can make friends and burn energy while you work or run errands.
+            </p>
+            <h3 class="service-detail-subtitle">Daily Activities:</h3>
+            <ul class="check-list">
+              <li>Group play sessions</li>
+              <li>Individual attention time</li>
+              <li>Rest periods with calming music</li>
+              <li>Enrichment activities</li>
+              <li>Basic training exercises</li>
+            </ul>
+            <h3 class="service-detail-subtitle">Great For:</h3>
+            <ul class="check-list">
+              <li>Social, energetic dogs</li>
+              <li>Puppies learning social skills</li>
+              <li>Dogs who get lonely at home</li>
+              <li>Working pet parents</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Overnight Pet Care -->
+        <div class="service-detail-card">
+          <img src="https://images.unsplash.com/photo-1554530699-505410e7bd20?w=1080" alt="Overnight Care">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Overnight Pet Care</h2>
+            <p class="service-detail-text">
+              For pets who need round-the-clock attention, our overnight care services provide comfort and security. A dedicated caregiver 
+              stays with your pet through the night, ensuring they feel safe, loved, and well-cared for.
+            </p>
+            <h3 class="service-detail-subtitle">Includes:</h3>
+            <ul class="check-list">
+              <li>Overnight supervision</li>
+              <li>Evening and morning meals</li>
+              <li>Bedtime routine</li>
+              <li>Multiple potty breaks</li>
+              <li>Cuddles and companionship</li>
+              <li>Emergency vet transport if needed</li>
+            </ul>
+            <h3 class="service-detail-subtitle">Best For:</h3>
+            <ul class="check-list">
+              <li>Anxious pets</li>
+              <li>Pets with medical needs</li>
+              <li>Senior pets requiring extra attention</li>
+              <li>Overnight business trips</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pet Grooming -->
+        <div class="service-detail-card">
+          <img src="https://images.unsplash.com/photo-1730403257848-a38a393f1b60?w=1080" alt="Pet Grooming">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Pet Grooming</h2>
+            <p class="service-detail-text">
+              Keep your pet looking and feeling their best with our professional grooming services. Our experienced groomers provide gentle, 
+              stress-free grooming in a calm environment, tailored to your pet's breed and coat type.
+            </p>
+            <h3 class="service-detail-subtitle">Services Offered:</h3>
+            <ul class="check-list">
+              <li>Bath and blow dry</li>
+              <li>Haircut and styling</li>
+              <li>Nail trimming and filing</li>
+              <li>Ear cleaning</li>
+              <li>Teeth brushing</li>
+              <li>De-shedding treatments</li>
+            </ul>
+            <h3 class="service-detail-subtitle">Perfect For:</h3>
+            <ul class="check-list">
+              <li>All breeds and coat types</li>
+              <li>Regular maintenance</li>
+              <li>Special occasions</li>
+              <li>Nervous or anxious pets</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pet Training -->
+        <div class="service-detail-card">
+          <img src="https://images.unsplash.com/photo-1544456948-c7ba22fe7111?w=1080" alt="Pet Training">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Pet Training</h2>
+            <p class="service-detail-text">
+              Build a stronger bond with your pet through positive reinforcement training. Our certified trainers work with dogs of all ages 
+              to teach basic obedience, address behavioral issues, and develop good manners.
+            </p>
+            <h3 class="service-detail-subtitle">Training Programs:</h3>
+            <ul class="check-list">
+              <li>Basic obedience (sit, stay, come)</li>
+              <li>Leash training</li>
+              <li>House training</li>
+              <li>Socialization skills</li>
+              <li>Behavior modification</li>
+              <li>Advanced commands and tricks</li>
+            </ul>
+            <h3 class="service-detail-subtitle">Ideal For:</h3>
+            <ul class="check-list">
+              <li>Puppies and young dogs</li>
+              <li>Rescue dogs</li>
+              <li>Dogs with behavioral issues</li>
+              <li>First-time pet owners</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(to bottom right, #0288D1, #0277BD); position: relative; overflow: hidden;">
+    <svg style="position: absolute; top: 0; left: 0; right: 0;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 500,120 800,60 C1000,20 1100,80 1200,60 L1200,0 L0,0 Z" fill="white" />
+    </svg>
+    
+    <div class="section-container text-center" style="position: relative; z-index: 10; color: white;">
+      <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Ready to Book a Service?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">Contact us today to schedule your pet's first visit or to learn more about our services.</p>
+      <button onclick="openLeadPopup()" class="btn btn-primary">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Lead Popup -->
+  <div id="lead-popup" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeLeadPopup()" aria-label="Close">&times;</button>
+      <h2 style="margin-bottom: 1rem; color: #1f2937;">Get Started with FurryFriends</h2>
+      <p style="margin-bottom: 1.5rem; color: #6b7280;">Fill out the form below and we'll get back to you within 24 hours.</p>
+      
+      <form onsubmit="submitLeadForm(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" name="phone" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Pet Type</label>
+          <select name="petType" class="form-select">
+            <option value="">Select pet type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service Interested In</label>
+          <select name="service" class="form-select">
+            <option value="">Select a service</option>
+            <option value="walking">Dog Walking</option>
+            <option value="sitting">Pet Sitting</option>
+            <option value="daycare">Pet Day Care</option>
+            <option value="overnight">Overnight Care</option>
+            <option value="grooming">Pet Grooming</option>
+            <option value="training">Pet Training</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Information</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your pet's needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

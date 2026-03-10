@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care Blog - FurryFriends CareServices</title>
+  <meta name="description" content="Expert pet care advice, tips, and guides from the FurryFriends team.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    <div class="hero-content">
+      <h1>Pet Care Blog & Resources</h1>
+      <p>Expert advice, tips, and guides to help you provide the best care for your beloved pets. Stay informed and keep your furry friends happy and healthy.</p>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section>
+    <div class="section-container">
+      <div class="grid grid-3">
+        <!-- Article 1 -->
+        <a href="blog-dog-training-tips.html" class="card" style="text-decoration: none; transition: transform 0.3s;">
+          <img src="https://images.unsplash.com/photo-1763989979792-67611852276b?w=1080" alt="Dog Training" class="card-image">
+          <div class="card-content">
+            <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="calendar" class="icon"></i>
+                March 5, 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="clock" class="icon"></i>
+                5 min read
+              </span>
+            </div>
+            <span class="badge badge-orange" style="margin-bottom: 0.75rem;">Training</span>
+            <h3 class="card-title">10 Essential Dog Training Tips for New Pet Owners</h3>
+            <p class="card-text">Learn the fundamental training techniques that will help you build a strong, positive relationship with your new furry friend.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: #0288D1; font-weight: 600; margin-top: 1rem;">
+              <span>Read More</span>
+              <i data-lucide="arrow-right" class="icon"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="blog-pet-nutrition-guide.html" class="card" style="text-decoration: none;">
+          <img src="https://images.unsplash.com/photo-1767023023369-96a7c923be0c?w=1080" alt="Pet Nutrition" class="card-image">
+          <div class="card-content">
+            <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="calendar" class="icon"></i>
+                March 3, 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="clock" class="icon"></i>
+                8 min read
+              </span>
+            </div>
+            <span class="badge badge-orange" style="margin-bottom: 0.75rem;">Health</span>
+            <h3 class="card-title">Complete Guide to Pet Nutrition: What Your Pet Really Needs</h3>
+            <p class="card-text">Discover the essential nutrients, feeding schedules, and dietary considerations for keeping your pet healthy and energetic.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: #0288D1; font-weight: 600; margin-top: 1rem;">
+              <span>Read More</span>
+              <i data-lucide="arrow-right" class="icon"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 3 -->
+        <a href="blog-grooming-essentials.html" class="card" style="text-decoration: none;">
+          <img src="https://images.unsplash.com/photo-1597603413826-cd1c06b05222?w=1080" alt="Pet Grooming" class="card-image">
+          <div class="card-content">
+            <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="calendar" class="icon"></i>
+                February 28, 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="clock" class="icon"></i>
+                6 min read
+              </span>
+            </div>
+            <span class="badge badge-orange" style="margin-bottom: 0.75rem;">Grooming</span>
+            <h3 class="card-title">Pet Grooming Essentials: A Step-by-Step Guide</h3>
+            <p class="card-text">Master the art of pet grooming at home with our comprehensive guide covering bathing, brushing, nail trimming, and more.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: #0288D1; font-weight: 600; margin-top: 1rem;">
+              <span>Read More</span>
+              <i data-lucide="arrow-right" class="icon"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 4 -->
+        <a href="blog-traveling-with-pets.html" class="card" style="text-decoration: none;">
+          <img src="https://images.unsplash.com/photo-1761895324012-5738c59ab355?w=1080" alt="Traveling with Pets" class="card-image">
+          <div class="card-content">
+            <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="calendar" class="icon"></i>
+                February 25, 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="clock" class="icon"></i>
+                7 min read
+              </span>
+            </div>
+            <span class="badge badge-orange" style="margin-bottom: 0.75rem;">Lifestyle</span>
+            <h3 class="card-title">Traveling with Pets: Safety Tips and Best Practices</h3>
+            <p class="card-text">Planning a trip with your pet? Learn how to make travel safe, comfortable, and stress-free for both you and your companion.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: #0288D1; font-weight: 600; margin-top: 1rem;">
+              <span>Read More</span>
+              <i data-lucide="arrow-right" class="icon"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 5 -->
+        <a href="blog-pet-mental-health.html" class="card" style="text-decoration: none;">
+          <img src="https://images.unsplash.com/photo-1746814881142-4324f28db080?w=1080" alt="Pet Mental Health" class="card-image">
+          <div class="card-content">
+            <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="calendar" class="icon"></i>
+                February 22, 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="clock" class="icon"></i>
+                6 min read
+              </span>
+            </div>
+            <span class="badge badge-orange" style="margin-bottom: 0.75rem;">Wellness</span>
+            <h3 class="card-title">Understanding Your Pet's Mental Health and Enrichment Needs</h3>
+            <p class="card-text">Explore the importance of mental stimulation and enrichment activities to keep your pet happy, engaged, and emotionally balanced.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: #0288D1; font-weight: 600; margin-top: 1rem;">
+              <span>Read More</span>
+              <i data-lucide="arrow-right" class="icon"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 6 -->
+        <a href="blog-exercise-routines.html" class="card" style="text-decoration: none;">
+          <img src="https://images.unsplash.com/photo-1771125633724-acad7b8405cb?w=1080" alt="Dog Exercise" class="card-image">
+          <div class="card-content">
+            <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.875rem; color: #6b7280; margin-bottom: 0.75rem;">
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="calendar" class="icon"></i>
+                February 20, 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.25rem;">
+                <i data-lucide="clock" class="icon"></i>
+                5 min read
+              </span>
+            </div>
+            <span class="badge badge-orange" style="margin-bottom: 0.75rem;">Exercise</span>
+            <h3 class="card-title">Creating the Perfect Exercise Routine for Your Dog</h3>
+            <p class="card-text">Learn how to design an exercise plan tailored to your dog's age, breed, and energy level for optimal health and happiness.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: #0288D1; font-weight: 600; margin-top: 1rem;">
+              <span>Read More</span>
+              <i data-lucide="arrow-right" class="icon"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(to bottom right, #0288D1, #0277BD); position: relative; overflow: hidden;">
+    <svg style="position: absolute; top: 0; left: 0; right: 0;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 500,120 800,60 C1000,20 1100,80 1200,60 L1200,0 L0,0 Z" fill="white" />
+    </svg>
+    
+    <div class="section-container text-center" style="position: relative; z-index: 10; color: white;">
+      <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Need Professional Pet Care?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">Our experienced team is ready to provide the best care for your beloved pets.</p>
+      <button onclick="openLeadPopup()" class="btn btn-primary">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Lead Popup -->
+  <div id="lead-popup" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeLeadPopup()" aria-label="Close">&times;</button>
+      <h2 style="margin-bottom: 1rem; color: #1f2937;">Get Started with FurryFriends</h2>
+      <p style="margin-bottom: 1.5rem; color: #6b7280;">Fill out the form below and we'll get back to you within 24 hours.</p>
+      
+      <form onsubmit="submitLeadForm(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" name="phone" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Pet Type</label>
+          <select name="petType" class="form-select">
+            <option value="">Select pet type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service Interested In</label>
+          <select name="service" class="form-select">
+            <option value="">Select a service</option>
+            <option value="walking">Dog Walking</option>
+            <option value="sitting">Pet Sitting</option>
+            <option value="daycare">Pet Day Care</option>
+            <option value="overnight">Overnight Care</option>
+            <option value="grooming">Pet Grooming</option>
+            <option value="training">Pet Training</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Information</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your pet's needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

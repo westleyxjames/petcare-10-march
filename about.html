@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - FurryFriends CareServices</title>
+  <meta name="description" content="Learn about FurryFriends CareServices and our commitment to providing exceptional pet care.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero hero-about">
+    <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    <div class="hero-container">
+      <div class="hero-about-image">
+        <img src="https://images.unsplash.com/photo-1759492280207-1a4f26394bf5?w=600" alt="Happy pet owner with pets" class="about-hero-img">
+      </div>
+      <div class="hero-about-content">
+        <h1>About FurryFriends CareServices</h1>
+        <p>Dedicated to providing exceptional care for your beloved pets since 2016</p>
+        <div class="hero-buttons">
+          <button onclick="openLeadPopup()" class="btn btn-primary">Get Started</button>
+          <a href="services.html" class="btn btn-secondary">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section>
+    <div class="section-container">
+      <h2 class="section-title">Our Story</h2>
+      <div class="content-narrow">
+        <p class="text-intro">
+          FurryFriends CareServices was founded by a team of passionate pet lovers who recognized the need for reliable, 
+          professional pet care services. What started as a small dog walking business has grown into a comprehensive 
+          pet care company serving thousands of happy pets and their families.
+        </p>
+        <p class="text-intro">
+          We believe that pets are family members who deserve the highest quality care, attention, and love. Our mission 
+          is to provide peace of mind to pet owners by offering trustworthy, compassionate services that cater to each 
+          pet's unique needs and personality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="bg-light-blue">
+    <div class="section-container">
+      <h2 class="section-title">Why Choose FurryFriends?</h2>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle orange-bg">
+              <i data-lucide="check-circle"></i>
+            </div>
+            <h3 class="card-title">Experienced Professionals</h3>
+            <p class="card-text">Our team consists of trained, background-checked pet care specialists with years of experience.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle blue-bg">
+              <i data-lucide="heart"></i>
+            </div>
+            <h3 class="card-title">Personalized Care</h3>
+            <p class="card-text">We tailor our services to meet the unique needs and preferences of each individual pet.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle orange-bg">
+              <i data-lucide="clock"></i>
+            </div>
+            <h3 class="card-title">24/7 Availability</h3>
+            <p class="card-text">We're here whenever you need us, day or night, with emergency services available.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle blue-bg">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3 class="card-title">Fully Insured</h3>
+            <p class="card-text">We carry comprehensive insurance for your complete peace of mind.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle orange-bg">
+              <i data-lucide="camera"></i>
+            </div>
+            <h3 class="card-title">Photo Updates</h3>
+            <p class="card-text">Receive regular photo and text updates so you always know how your pet is doing.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle blue-bg">
+              <i data-lucide="award"></i>
+            </div>
+            <h3 class="card-title">Award Winning</h3>
+            <p class="card-text">Recognized as the top pet care provider in our region for three consecutive years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section>
+    <div class="section-container">
+      <h2 class="section-title">Our Core Values</h2>
+      
+      <div class="grid grid-2">
+        <div class="values-item">
+          <h3 class="values-title">
+            <i data-lucide="heart" style="color: #FF7043; width: 2rem; height: 2rem;"></i>
+            Compassion
+          </h3>
+          <p class="values-text">
+            We treat every pet with the love, care, and respect they deserve, as if they were our own family members.
+          </p>
+        </div>
+
+        <div class="values-item">
+          <h3 class="values-title">
+            <i data-lucide="shield-check" style="color: #0288D1; width: 2rem; height: 2rem;"></i>
+            Trust
+          </h3>
+          <p class="values-text">
+            Building lasting relationships through reliability, transparency, and consistent high-quality service.
+          </p>
+        </div>
+
+        <div class="values-item">
+          <h3 class="values-title">
+            <i data-lucide="star" style="color: #FF7043; width: 2rem; height: 2rem;"></i>
+            Excellence
+          </h3>
+          <p class="values-text">
+            Continuously improving our services and training to provide the best possible care for your pets.
+          </p>
+        </div>
+
+        <div class="values-item">
+          <h3 class="values-title">
+            <i data-lucide="users" style="color: #0288D1; width: 2rem; height: 2rem;"></i>
+            Community
+          </h3>
+          <p class="values-text">
+            Supporting local animal shelters and rescue organizations through volunteer work and donations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(to bottom right, #0288D1, #0277BD); position: relative; overflow: hidden;">
+    <svg style="position: absolute; top: 0; left: 0; right: 0;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 500,120 800,60 C1000,20 1100,80 1200,60 L1200,0 L0,0 Z" fill="white" />
+    </svg>
+    
+    <div class="section-container text-center" style="position: relative; z-index: 10; color: white;">
+      <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Ready to Experience the FurryFriends Difference?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">Contact us today to learn more about our services and schedule a meet-and-greet.</p>
+      <button onclick="openLeadPopup()" class="btn btn-primary">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Lead Popup -->
+  <div id="lead-popup" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeLeadPopup()" aria-label="Close">&times;</button>
+      <h2 style="margin-bottom: 1rem; color: #1f2937;">Get Started with FurryFriends</h2>
+      <p style="margin-bottom: 1.5rem; color: #6b7280;">Fill out the form below and we'll get back to you within 24 hours.</p>
+      
+      <form onsubmit="submitLeadForm(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" name="phone" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Pet Type</label>
+          <select name="petType" class="form-select">
+            <option value="">Select pet type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service Interested In</label>
+          <select name="service" class="form-select">
+            <option value="">Select a service</option>
+            <option value="walking">Dog Walking</option>
+            <option value="sitting">Pet Sitting</option>
+            <option value="daycare">Pet Day Care</option>
+            <option value="overnight">Overnight Care</option>
+            <option value="grooming">Pet Grooming</option>
+            <option value="training">Pet Training</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Information</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your pet's needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

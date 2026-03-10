@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - FurryFriends CareServices</title>
+  <meta name="description" content="Frequently asked questions about our pet care services, pricing, policies, and more.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    <div class="hero-content">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers to common questions about our pet care services</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <div class="section-container">
+      <div style="max-width: 56rem; margin: 0 auto;">
+        <!-- General Questions -->
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin-bottom: 1.5rem;">General Questions</h2>
+        
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>What areas do you serve?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We serve the greater metropolitan area and surrounding suburbs within a 30-mile radius of our main facility. Contact us to confirm we service your specific location.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Are your staff members trained and insured?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes! All our pet care professionals undergo comprehensive training, background checks, and are fully insured and bonded. Many hold certifications in pet first aid and CPR.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Do you offer emergency services?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes, our veterinary clinic offers 24/7 emergency services. Call us immediately at 1-888-332-7387 if your pet requires urgent medical attention.
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking & Scheduling -->
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin: 3rem 0 1.5rem;">Booking & Scheduling</h2>
+        
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>How far in advance should I book services?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We recommend booking at least 1-2 weeks in advance, especially during holidays and peak seasons. For last-minute needs, contact us directly—we'll do our best to accommodate you.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>What is your cancellation policy?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We require 24-hour notice for cancellations to avoid charges. Cancellations with less than 24 hours notice may incur a fee of 50% of the service cost. Emergency situations are handled on a case-by-case basis.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Can I request a specific caregiver?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes! If your pet has bonded with a particular caregiver, you can request them for future appointments. We'll do our best to honor your preferences based on availability.
+            </div>
+          </div>
+        </div>
+
+        <!-- Services & Pricing -->
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin: 3rem 0 1.5rem;">Services & Pricing</h2>
+        
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>How much do your services cost?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Pricing varies by service type, duration, and frequency. Dog walking starts at $25 per 30-minute walk, pet sitting from $40 per visit, daycare at $35 per day, and grooming from $50. Contact us for a detailed quote tailored to your needs.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Do you offer package deals or discounts?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes! We offer discounted packages for recurring services and multiple pets. Our loyalty program provides additional savings for regular clients. Ask us about current promotions and bundle deals.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>What payment methods do you accept?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We accept all major credit cards, debit cards, PayPal, Venmo, and cash. Payment is typically due at the time of service or can be automatically billed for recurring appointments.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pet Requirements -->
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin: 3rem 0 1.5rem;">Pet Requirements</h2>
+        
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>What vaccinations are required?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              For daycare and boarding services, dogs must be current on rabies, DHPP, and Bordetella vaccines. Cats need rabies and FVRCP. We require proof of vaccination from your veterinarian before service begins.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Do you care for pets with special needs?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Absolutely! We have experience caring for senior pets, those with medical conditions, and pets requiring medication administration. Please provide detailed care instructions, and we'll create a customized care plan.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Is there a weight or breed restriction?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We welcome all breeds and sizes! Our facility and staff are equipped to handle everything from tiny Chihuahuas to large Great Danes. We assess each pet individually for behavior and temperament rather than breed.
+            </div>
+          </div>
+        </div>
+
+        <!-- Safety & Communication -->
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: #1f2937; margin: 3rem 0 1.5rem;">Safety & Communication</h2>
+        
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>How do you ensure my pet's safety?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Safety is our top priority. We maintain proper pet-to-staff ratios, use secure facilities, perform temperament assessments, follow strict protocols, and all staff are trained in pet first aid and emergency response.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Will I receive updates about my pet?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              Yes! We provide photo updates and status reports after each visit or at the end of each day. For extended stays, we send daily updates. You can also contact us anytime to check on your pet.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" onclick="toggleAccordion(this)">
+            <span>What happens if my pet gets sick or injured?</span>
+            <span class="accordion-icon" style="font-size: 1.5rem; color: #0288D1;">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              We will contact you immediately if your pet shows any signs of illness or injury. With your authorization, we'll seek veterinary care promptly. We work closely with local veterinarians and have protocols for emergency situations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(to bottom right, #0288D1, #0277BD); position: relative; overflow: hidden;">
+    <svg style="position: absolute; top: 0; left: 0; right: 0;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 500,120 800,60 C1000,20 1100,80 1200,60 L1200,0 L0,0 Z" fill="white" />
+    </svg>
+    
+    <div class="section-container text-center" style="position: relative; z-index: 10; color: white;">
+      <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Still Have Questions?</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">Our friendly team is here to help. Contact us today!</p>
+      <button onclick="openLeadPopup()" class="btn btn-primary">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Lead Popup -->
+  <div id="lead-popup" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeLeadPopup()" aria-label="Close">&times;</button>
+      <h2 style="margin-bottom: 1rem; color: #1f2937;">Get Started with FurryFriends</h2>
+      <p style="margin-bottom: 1.5rem; color: #6b7280;">Fill out the form below and we'll get back to you within 24 hours.</p>
+      
+      <form onsubmit="submitLeadForm(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" name="phone" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Pet Type</label>
+          <select name="petType" class="form-select">
+            <option value="">Select pet type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service Interested In</label>
+          <select name="service" class="form-select">
+            <option value="">Select a service</option>
+            <option value="walking">Dog Walking</option>
+            <option value="sitting">Pet Sitting</option>
+            <option value="daycare">Pet Day Care</option>
+            <option value="overnight">Overnight Care</option>
+            <option value="grooming">Pet Grooming</option>
+            <option value="training">Pet Training</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Information</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your pet's needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

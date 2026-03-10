@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Grooming Essentials - FurryFriends Blog</title>
+  <meta name="description" content="Master the art of pet grooming at home with our comprehensive guide covering bathing, brushing, nail trimming, and more.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="padding: 5rem 1rem 4rem;">
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <a href="blog.html" class="back-link">
+        <i data-lucide="arrow-left" class="icon"></i>
+        Back to Blog
+      </a>
+
+      <div style="margin: 1.5rem 0;">
+        <span class="badge badge-orange">Grooming</span>
+      </div>
+
+      <h1 style="font-size: 2.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">
+        Pet Grooming Essentials: A Step-by-Step Guide
+      </h1>
+
+      <div class="article-meta">
+        <span><i data-lucide="calendar" class="icon"></i> February 28, 2026</span>
+        <span><i data-lucide="clock" class="icon"></i> 6 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Image -->
+  <section style="padding: 2rem 1rem;">
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <div class="shadow-lg" style="border-radius: 1rem; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1597603413826-cd1c06b05222?w=1080" alt="Pet Grooming" style="width: 100%; height: 24rem; object-fit: cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article style="padding: 2rem 1rem 4rem;">
+    <div class="article-content">
+      <p class="lead">
+        Regular grooming is essential for your pet's health, comfort, and appearance. Learn how to groom your pet at home with confidence and create a positive experience for both of you.
+      </p>
+
+      <h2>Why Regular Grooming Matters</h2>
+      <p>
+        Grooming isn't just about keeping your pet looking good—it's crucial for their health:
+      </p>
+      <ul>
+        <li>Prevents matting and skin irritation</li>
+        <li>Reduces shedding around your home</li>
+        <li>Allows early detection of health issues</li>
+        <li>Strengthens your bond with your pet</li>
+        <li>Keeps nails at a safe length</li>
+      </ul>
+
+      <h2>Essential Grooming Tools</h2>
+      
+      <h3>Brushing Tools</h3>
+      <ul>
+        <li><strong>Slicker brush:</strong> For removing mats and tangles</li>
+        <li><strong>Bristle brush:</strong> For short-haired pets</li>
+        <li><strong>Undercoat rake:</strong> For double-coated breeds</li>
+        <li><strong>Comb:</strong> For finishing and checking for parasites</li>
+      </ul>
+
+      <h3>Bathing Supplies</h3>
+      <ul>
+        <li><strong>Pet-specific shampoo:</strong> Never use human shampoo</li>
+        <li><strong>Conditioner:</strong> For long-haired pets</li>
+        <li><strong>Towels:</strong> Multiple absorbent towels</li>
+        <li><strong>Non-slip mat:</strong> For tub safety</li>
+      </ul>
+
+      <h3>Nail Care</h3>
+      <ul>
+        <li><strong>Nail clippers:</strong> Scissor or guillotine style</li>
+        <li><strong>Nail grinder:</strong> Alternative to clipping</li>
+        <li><strong>Styptic powder:</strong> To stop bleeding if needed</li>
+      </ul>
+
+      <h2>Brushing Your Pet</h2>
+
+      <h3>How Often to Brush</h3>
+      <ul>
+        <li><strong>Long-haired pets:</strong> Daily</li>
+        <li><strong>Medium-haired pets:</strong> 2-3 times per week</li>
+        <li><strong>Short-haired pets:</strong> Once per week</li>
+        <li><strong>During shedding season:</strong> Increase frequency</li>
+      </ul>
+
+      <h3>Brushing Technique</h3>
+      <ol>
+        <li>Start with areas your pet enjoys (usually back and sides)</li>
+        <li>Brush in the direction of hair growth</li>
+        <li>Work through any mats gently—never pull</li>
+        <li>Pay special attention to behind ears, armpits, and belly</li>
+        <li>End with a comb to check for remaining tangles</li>
+      </ol>
+
+      <h2>Bath Time Made Easy</h2>
+
+      <h3>Bathing Frequency</h3>
+      <ul>
+        <li><strong>Dogs:</strong> Every 4-6 weeks (varies by breed and lifestyle)</li>
+        <li><strong>Cats:</strong> Rarely needed (they groom themselves)</li>
+        <li><strong>After outdoor adventures:</strong> As needed</li>
+      </ul>
+
+      <h3>Step-by-Step Bathing Guide</h3>
+      <ol>
+        <li><strong>Brush first:</strong> Remove mats and loose fur before wetting</li>
+        <li><strong>Prepare:</strong> Gather all supplies within reach</li>
+        <li><strong>Water temperature:</strong> Lukewarm, never hot</li>
+        <li><strong>Wet thoroughly:</strong> Avoid getting water in ears</li>
+        <li><strong>Shampoo:</strong> Massage gently, avoiding eyes and ears</li>
+        <li><strong>Rinse completely:</strong> Leftover shampoo can irritate skin</li>
+        <li><strong>Condition (if needed):</strong> Focus on ends of long fur</li>
+        <li><strong>Dry:</strong> Towel dry thoroughly, use blow dryer on low if tolerated</li>
+      </ol>
+
+      <h2>Nail Trimming</h2>
+
+      <h3>Why It's Important</h3>
+      <p>
+        Overgrown nails can cause:
+      </p>
+      <ul>
+        <li>Pain and difficulty walking</li>
+        <li>Joint problems over time</li>
+        <li>Broken or split nails</li>
+        <li>Scratching damage to furniture and people</li>
+      </ul>
+
+      <h3>How to Trim Nails Safely</h3>
+      <ol>
+        <li><strong>Get your pet comfortable:</strong> Practice holding paws regularly</li>
+        <li><strong>Identify the quick:</strong> Pink area inside nail containing blood vessels</li>
+        <li><strong>Clip at 45-degree angle:</strong> Cut just before the quick</li>
+        <li><strong>Take small amounts:</strong> Better to trim less frequently</li>
+        <li><strong>Reward immediately:</strong> Treats and praise after each nail</li>
+      </ol>
+
+      <p><strong>Tip:</strong> If you cut the quick accidentally, apply styptic powder and don't panic. Your pet will be fine!</p>
+
+      <h2>Ear Cleaning</h2>
+      <p>
+        Check ears weekly for:
+      </p>
+      <ul>
+        <li>Redness or swelling</li>
+        <li>Unusual odor</li>
+        <li>Excessive wax buildup</li>
+        <li>Discharge</li>
+      </ul>
+
+      <h3>Cleaning Process</h3>
+      <ol>
+        <li>Use pet-specific ear cleaner</li>
+        <li>Apply solution to cotton ball (never Q-tips in ear canal)</li>
+        <li>Gently wipe visible areas only</li>
+        <li>Let your pet shake their head</li>
+        <li>Dry outer ear with clean cotton ball</li>
+      </ol>
+
+      <h2>Dental Care</h2>
+      <p>
+        Oral hygiene is often overlooked but crucial:
+      </p>
+      <ul>
+        <li><strong>Brush teeth:</strong> Daily if possible, at least 2-3 times per week</li>
+        <li><strong>Use pet toothpaste:</strong> Never use human toothpaste</li>
+        <li><strong>Dental treats:</strong> Supplement brushing with approved chews</li>
+        <li><strong>Professional cleaning:</strong> Annual vet dental checkups</li>
+      </ul>
+
+      <h2>Grooming Different Coat Types</h2>
+
+      <h3>Short-Haired Pets</h3>
+      <ul>
+        <li>Weekly brushing with bristle brush</li>
+        <li>Bathe every 6-8 weeks</li>
+        <li>Quick drying time</li>
+        <li>Minimal trimming needed</li>
+      </ul>
+
+      <h3>Long-Haired Pets</h3>
+      <ul>
+        <li>Daily brushing to prevent mats</li>
+        <li>Bathe every 4-6 weeks</li>
+        <li>Regular trimming around eyes, paws, and sanitary areas</li>
+        <li>Professional grooming every 6-8 weeks recommended</li>
+      </ul>
+
+      <h3>Double-Coated Breeds</h3>
+      <ul>
+        <li>Brush 2-3 times per week</li>
+        <li>Heavy shedding twice per year</li>
+        <li>Never shave (disrupts temperature regulation)</li>
+        <li>Use undercoat rake during shedding season</li>
+      </ul>
+
+      <h2>Making Grooming Positive</h2>
+
+      <h3>Tips for Nervous Pets</h3>
+      <ul>
+        <li>Start young and go slowly</li>
+        <li>Keep sessions short at first</li>
+        <li>Use high-value treats and praise</li>
+        <li>Stay calm and patient</li>
+        <li>Never force—take breaks if needed</li>
+        <li>Consider calming music or pheromone sprays</li>
+      </ul>
+
+      <h2>When to Seek Professional Help</h2>
+      <p>
+        Visit a professional groomer or vet if:
+      </p>
+      <ul>
+        <li>Your pet is severely matted</li>
+        <li>You're uncomfortable with certain tasks</li>
+        <li>Your pet is aggressive during grooming</li>
+        <li>You notice skin issues, lumps, or unusual odors</li>
+        <li>Your pet requires breed-specific styling</li>
+      </ul>
+
+      <h2>Seasonal Grooming Considerations</h2>
+
+      <h3>Summer</h3>
+      <ul>
+        <li>More frequent brushing during shedding</li>
+        <li>Consider a summer trim (but never shave double coats)</li>
+        <li>Check for ticks after outdoor activities</li>
+        <li>Keep paw pads trimmed for traction</li>
+      </ul>
+
+      <h3>Winter</h3>
+      <ul>
+        <li>Wipe paws after walks to remove salt and chemicals</li>
+        <li>Maintain coat length for warmth</li>
+        <li>Keep nail trimming consistent (less natural wear on pavement)</li>
+        <li>Moisturize paw pads if they become dry</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+      <p>
+        Regular grooming is an investment in your pet's health and happiness. With the right tools, techniques, and patience, you can master at-home grooming and enjoy quality bonding time with your furry friend.
+      </p>
+      <p>
+        Remember, every pet is different. What works for one may not work for another, so adjust your grooming routine to fit your pet's individual needs and temperament.
+      </p>
+
+      <div class="cta-box">
+        <h3>Need Professional Grooming Services?</h3>
+        <p>Our experienced groomers provide gentle, professional care for pets of all sizes and breeds.</p>
+        <a href="services.html" class="btn btn-primary">Book a Grooming Appointment</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

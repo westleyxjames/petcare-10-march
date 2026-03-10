@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - FurryFriends CareServices</title>
+  <meta name="description" content="Get in touch with FurryFriends CareServices. We're here to answer your questions and help with your pet care needs.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We're here to help! Reach out with any questions about our pet care services</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="section-container">
+      <div class="grid grid-2">
+        <!-- Contact Form -->
+        <div>
+          <h2 style="font-size: 2rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">Send Us a Message</h2>
+          <p style="color: #4b5563; margin-bottom: 2rem;">Fill out the form below and we'll get back to you within 24 hours.</p>
+          
+          <form onsubmit="submitContactForm(event)">
+            <div class="form-group">
+              <label class="form-label">Your Name *</label>
+              <input type="text" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input type="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" name="phone" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Subject *</label>
+              <input type="text" name="subject" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Message *</label>
+              <textarea name="message" class="form-textarea" required placeholder="Tell us how we can help..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 style="font-size: 2rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">Get in Touch</h2>
+          <p style="color: #4b5563; margin-bottom: 2rem;">Prefer to contact us directly? Here's how:</p>
+          
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <div style="padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 3rem; height: 3rem; background: #E1F5FE; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="phone" style="width: 1.5rem; height: 1.5rem; color: #0288D1;"></i>
+              </div>
+              <div>
+                <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Phone</h3>
+                <p style="color: #4b5563;">Call us anytime, 24/7</p>
+                <a href="tel:1-888-332-7387" style="color: #0288D1; font-weight: 600; text-decoration: none;">1-888-332-7387</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <div style="padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 3rem; height: 3rem; background: #FFE0B2; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="mail" style="width: 1.5rem; height: 1.5rem; color: #FF7043;"></i>
+              </div>
+              <div>
+                <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Email</h3>
+                <p style="color: #4b5563;">We'll respond within 24 hours</p>
+                <a href="mailto:info@furryfriends.com" style="color: #0288D1; font-weight: 600; text-decoration: none;">info@furryfriends.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <div style="padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 3rem; height: 3rem; background: #E1F5FE; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="map-pin" style="width: 1.5rem; height: 1.5rem; color: #0288D1;"></i>
+              </div>
+              <div>
+                <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Location</h3>
+                <p style="color: #4b5563;">Visit us at our main facility</p>
+                <p style="color: #4b5563;">40 Washington Square S<br>New York, NY 10012, USA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="padding: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+              <div style="width: 3rem; height: 3rem; background: #FFE0B2; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i data-lucide="clock" style="width: 1.5rem; height: 1.5rem; color: #FF7043;"></i>
+              </div>
+              <div>
+                <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Hours</h3>
+                <p style="color: #4b5563;">
+                  Monday - Friday: 7am - 8pm<br>
+                  Saturday: 8am - 6pm<br>
+                  Sunday: 9am - 5pm<br>
+                  Emergency: 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Section -->
+  <section class="bg-light-blue">
+    <div class="section-container">
+      <div style="text-align: center; max-width: 42rem; margin: 0 auto;">
+        <i data-lucide="alert-circle" style="width: 4rem; height: 4rem; color: #EF4444; margin-bottom: 1rem;"></i>
+        <h2 style="font-size: 2rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">Emergency?</h2>
+        <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 1.5rem;">
+          If your pet is experiencing a medical emergency, please call us immediately at 
+          <a href="tel:1-888-332-7387" style="color: #EF4444; font-weight: bold;">1-888-332-7387</a>. 
+          Our emergency veterinary team is available 24/7 to provide urgent care.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

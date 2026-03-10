@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating the Perfect Exercise Routine - FurryFriends Blog</title>
+  <meta name="description" content="Learn how to design an exercise plan tailored to your dog's age, breed, and energy level for optimal health and happiness.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="padding: 5rem 1rem 4rem;">
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <a href="blog.html" class="back-link">
+        <i data-lucide="arrow-left" class="icon"></i>
+        Back to Blog
+      </a>
+
+      <div style="margin: 1.5rem 0;">
+        <span class="badge badge-orange">Exercise</span>
+      </div>
+
+      <h1 style="font-size: 2.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1rem;">
+        Creating the Perfect Exercise Routine for Your Dog
+      </h1>
+
+      <div class="article-meta">
+        <span><i data-lucide="calendar" class="icon"></i> February 20, 2026</span>
+        <span><i data-lucide="clock" class="icon"></i> 5 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Image -->
+  <section style="padding: 2rem 1rem;">
+    <div style="max-width: 64rem; margin: 0 auto;">
+      <div class="shadow-lg" style="border-radius: 1rem; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1771125633724-acad7b8405cb?w=1080" alt="Dog Exercise" style="width: 100%; height: 24rem; object-fit: cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <article style="padding: 2rem 1rem 4rem;">
+    <div class="article-content">
+      <p class="lead">
+        Regular exercise is essential for your dog's physical health, mental well-being, and overall happiness. Discover how to create a customized exercise plan that keeps your dog fit, healthy, and content.
+      </p>
+
+      <h2>Why Exercise Is Essential</h2>
+      <p>
+        Regular physical activity provides numerous benefits for dogs:
+      </p>
+      <ul>
+        <li>Maintains healthy weight and prevents obesity</li>
+        <li>Strengthens muscles and joints</li>
+        <li>Improves cardiovascular health</li>
+        <li>Reduces behavioral problems</li>
+        <li>Relieves stress and anxiety</li>
+        <li>Promotes better sleep</li>
+        <li>Enhances bond between dog and owner</li>
+        <li>Provides mental stimulation</li>
+      </ul>
+
+      <h2>Determining Your Dog's Exercise Needs</h2>
+
+      <h3>Energy Level by Breed Group</h3>
+      
+      <p><strong>High Energy (60-120 minutes daily):</strong></p>
+      <ul>
+        <li><strong>Herding breeds:</strong> Border Collies, Australian Shepherds, German Shepherds</li>
+        <li><strong>Sporting breeds:</strong> Labrador Retrievers, Golden Retrievers, Pointers</li>
+        <li><strong>Working breeds:</strong> Huskies, Malamutes, Belgian Malinois</li>
+        <li><strong>Terriers:</strong> Jack Russell Terriers, Airedale Terriers</li>
+      </ul>
+
+      <p><strong>Moderate Energy (30-60 minutes daily):</strong></p>
+      <ul>
+        <li><strong>Hounds:</strong> Beagles, Basset Hounds</li>
+        <li><strong>Some working breeds:</strong> Boxers, Dobermans</li>
+        <li><strong>Mixed breeds:</strong> Many medium-sized mixed breeds</li>
+      </ul>
+
+      <p><strong>Low Energy (20-30 minutes daily):</strong></p>
+      <ul>
+        <li><strong>Toy breeds:</strong> Chihuahuas, Pomeranians, Shih Tzus</li>
+        <li><strong>Brachycephalic breeds:</strong> Bulldogs, Pugs, French Bulldogs</li>
+        <li><strong>Senior dogs:</strong> Most older dogs regardless of breed</li>
+      </ul>
+
+      <h3>Age Considerations</h3>
+      
+      <p><strong>Puppies (8 weeks - 1 year):</strong></p>
+      <ul>
+        <li>5 minutes of exercise per month of age, twice daily</li>
+        <li>Example: 4-month-old puppy = 20 minutes, 2x/day</li>
+        <li>Avoid excessive jumping or running on hard surfaces</li>
+        <li>Focus on play and exploration</li>
+        <li>Short, frequent sessions better than long ones</li>
+      </ul>
+
+      <p><strong>Adult Dogs (1-7 years):</strong></p>
+      <ul>
+        <li>Follow breed-specific guidelines</li>
+        <li>Can handle more intense exercise</li>
+        <li>Consistent daily routine recommended</li>
+        <li>Mix of different activity types</li>
+      </ul>
+
+      <p><strong>Senior Dogs (7+ years):</strong></p>
+      <ul>
+        <li>Shorter, gentler exercise sessions</li>
+        <li>Focus on low-impact activities</li>
+        <li>Watch for signs of fatigue or pain</li>
+        <li>Swimming excellent for joint health</li>
+        <li>More frequent but shorter walks</li>
+      </ul>
+
+      <h2>Types of Exercise Activities</h2>
+
+      <h3>Walking and Hiking</h3>
+      <p>
+        The foundation of most exercise routines:
+      </p>
+      <ul>
+        <li><strong>Daily walks:</strong> 20-60 minutes depending on breed</li>
+        <li><strong>Vary routes:</strong> New sights and smells provide mental stimulation</li>
+        <li><strong>Proper pace:</strong> Brisk enough to raise heart rate slightly</li>
+        <li><strong>Hiking:</strong> Great for high-energy dogs, adjust for terrain difficulty</li>
+      </ul>
+
+      <h3>Running and Jogging</h3>
+      <p>
+        Best for high-energy, athletic breeds:
+      </p>
+      <ul>
+        <li>Start gradually and build endurance</li>
+        <li>Avoid during extreme heat</li>
+        <li>Wait until dog is fully grown (12-18 months)</li>
+        <li>Check paw pads regularly for injuries</li>
+        <li>Bring water for longer runs</li>
+      </ul>
+
+      <h3>Swimming</h3>
+      <p>
+        Excellent low-impact exercise:
+      </p>
+      <ul>
+        <li>Great for dogs with joint issues or arthritis</li>
+        <li>Full-body workout</li>
+        <li>Cooling in summer heat</li>
+        <li>Always supervise—not all dogs are natural swimmers</li>
+        <li>Use dog life jacket if needed</li>
+      </ul>
+
+      <h3>Fetch and Retrieval Games</h3>
+      <ul>
+        <li>High-intensity cardiovascular exercise</li>
+        <li>Engages natural hunting instincts</li>
+        <li>Can be done in smaller spaces</li>
+        <li>Tennis balls, frisbees, or retrieval bumpers</li>
+        <li>Allow rest between throws</li>
+      </ul>
+
+      <h3>Agility Training</h3>
+      <ul>
+        <li>Combines physical and mental exercise</li>
+        <li>Builds confidence and coordination</li>
+        <li>Can create DIY course at home</li>
+        <li>Join agility classes for structured training</li>
+        <li>Great for high-energy, intelligent breeds</li>
+      </ul>
+
+      <h3>Tug-of-War</h3>
+      <ul>
+        <li>Builds muscle strength</li>
+        <li>Interactive bonding activity</li>
+        <li>Can be played indoors</li>
+        <li>Teach "drop it" command first</li>
+        <li>Good for rainy days</li>
+      </ul>
+
+      <h2>Sample Exercise Schedules</h2>
+
+      <h3>High-Energy Dog (Border Collie, Lab)</h3>
+      <p><strong>Morning:</strong></p>
+      <ul>
+        <li>30-minute brisk walk or jog</li>
+        <li>15 minutes fetch in yard</li>
+      </ul>
+      <p><strong>Afternoon:</strong></p>
+      <ul>
+        <li>10-minute training session</li>
+        <li>Mental enrichment activities</li>
+      </ul>
+      <p><strong>Evening:</strong></p>
+      <ul>
+        <li>30-minute walk</li>
+        <li>15 minutes play or agility</li>
+      </ul>
+
+      <h3>Moderate-Energy Dog (Beagle, Cocker Spaniel)</h3>
+      <p><strong>Morning:</strong></p>
+      <ul>
+        <li>20-30 minute walk</li>
+      </ul>
+      <p><strong>Evening:</strong></p>
+      <ul>
+        <li>20-30 minute walk</li>
+        <li>10-15 minutes playtime</li>
+      </ul>
+
+      <h3>Low-Energy Dog (Bulldog, Senior Dog)</h3>
+      <p><strong>Morning:</strong></p>
+      <ul>
+        <li>10-15 minute gentle walk</li>
+      </ul>
+      <p><strong>Evening:</strong></p>
+      <ul>
+        <li>10-15 minute gentle walk</li>
+        <li>Short play session indoors</li>
+      </ul>
+
+      <h2>Safety Considerations</h2>
+
+      <h3>Weather Precautions</h3>
+      
+      <p><strong>Hot Weather:</strong></p>
+      <ul>
+        <li>Exercise early morning or late evening</li>
+        <li>Bring plenty of water</li>
+        <li>Check pavement temperature (if too hot for hand, too hot for paws)</li>
+        <li>Watch for signs of overheating: excessive panting, drooling, lethargy</li>
+        <li>Brachycephalic breeds extra susceptible</li>
+      </ul>
+
+      <p><strong>Cold Weather:</strong></p>
+      <ul>
+        <li>Consider dog coat for short-haired breeds</li>
+        <li>Protect paws with booties or paw balm</li>
+        <li>Wipe paws after walks to remove salt/chemicals</li>
+        <li>Shorter walks in extreme cold</li>
+        <li>Dry thoroughly after snow play</li>
+      </ul>
+
+      <h3>Signs to Stop Exercising</h3>
+      <p>
+        Watch for these warning signs:
+      </p>
+      <ul>
+        <li>Excessive panting or difficulty breathing</li>
+        <li>Limping or favoring a leg</li>
+        <li>Reluctance to continue</li>
+        <li>Disorientation or wobbliness</li>
+        <li>Bright red gums</li>
+        <li>Vomiting or diarrhea</li>
+      </ul>
+
+      <h3>Pre-Exercise Health Check</h3>
+      <ul>
+        <li>Veterinary clearance before starting new routine</li>
+        <li>Especially important for overweight, senior, or previously inactive dogs</li>
+        <li>Annual wellness exams to monitor fitness</li>
+        <li>Address any joint issues or health concerns</li>
+      </ul>
+
+      <h2>Indoor Exercise Options</h2>
+      <p>
+        For bad weather or limited outdoor space:
+      </p>
+      <ul>
+        <li><strong>Stair climbing:</strong> Great cardio workout</li>
+        <li><strong>Hide and seek:</strong> Mental and physical exercise</li>
+        <li><strong>Treadmill training:</strong> After proper introduction</li>
+        <li><strong>Indoor fetch:</strong> Using soft toys</li>
+        <li><strong>Obstacle course:</strong> Using furniture and household items</li>
+        <li><strong>Tug-of-war:</strong> In open space</li>
+        <li><strong>Puzzle toys:</strong> Mental workout</li>
+      </ul>
+
+      <h2>Mental Exercise Matters Too</h2>
+      <p>
+        Mental stimulation tires dogs as much as physical exercise:
+      </p>
+      <ul>
+        <li>Training sessions (5-15 minutes)</li>
+        <li>Scent work and nose games</li>
+        <li>Food puzzle toys</li>
+        <li>New tricks and commands</li>
+        <li>Socialization with other dogs</li>
+        <li>Exploring new environments</li>
+      </ul>
+
+      <h2>Building an Exercise Routine</h2>
+
+      <h3>Starting From Scratch</h3>
+      <ol>
+        <li>Consult veterinarian for health clearance</li>
+        <li>Start slowly—increase duration gradually</li>
+        <li>Monitor for signs of fatigue or discomfort</li>
+        <li>Establish consistent schedule</li>
+        <li>Track progress and adjust as needed</li>
+      </ol>
+
+      <h3>Staying Motivated</h3>
+      <ul>
+        <li>Find activities both you and your dog enjoy</li>
+        <li>Join dog walking groups or classes</li>
+        <li>Set goals and celebrate milestones</li>
+        <li>Vary activities to prevent boredom</li>
+        <li>Use fitness trackers designed for dogs</li>
+        <li>Make it part of your routine</li>
+      </ul>
+
+      <h2>Common Mistakes to Avoid</h2>
+      <ul>
+        <li><strong>Too much too soon:</strong> Gradually build endurance</li>
+        <li><strong>Ignoring breed limitations:</strong> Not all dogs can run marathons</li>
+        <li><strong>Exercising right after meals:</strong> Wait 1-2 hours to prevent bloat</li>
+        <li><strong>Using retractable leashes:</strong> Less control, potential safety hazard</li>
+        <li><strong>Neglecting warm-up and cool-down:</strong> Especially for intense activities</li>
+        <li><strong>Not bringing water:</strong> Essential for longer sessions</li>
+        <li><strong>Exercising sick or injured dogs:</strong> Allow proper recovery time</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+      <p>
+        Creating the perfect exercise routine for your dog takes time and attention to their individual needs. By considering their age, breed, health status, and preferences, you can design a program that keeps them healthy, happy, and thriving.
+      </p>
+      <p>
+        Remember, the best exercise routine is one you can stick to consistently. Start small, be patient, and enjoy the journey of getting active with your best friend!
+      </p>
+
+      <div class="cta-box">
+        <h3>Need Help Exercising Your Dog?</h3>
+        <p>Our professional dog walking services ensure your pup gets the exercise they need every day.</p>
+        <a href="services.html" class="btn btn-primary">Book Dog Walking Services</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

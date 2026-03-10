@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinary Care - FurryFriends CareServices</title>
+  <meta name="description" content="Comprehensive veterinary care services for your pets including wellness exams, vaccinations, dental care, and emergency services.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="paw-print"></i>
+          </div>
+          <span class="logo-text">FurryFriends <span class="highlight">CareServices</span></span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="vet-care.html" class="nav-link active">Vet Care</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="faq.html" class="nav-link">FAQ</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+        </nav>
+
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="vet-care.html" class="nav-link active">Vet Care</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:1-888-332-7387" class="call-button">Call Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero hero-vet-care">
+    <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    <div class="hero-container">
+      <div class="hero-vet-image">
+        <img src="https://images.unsplash.com/photo-1770836037793-95bdbf190f71?w=600" alt="Veterinarian caring for pet" class="vet-hero-img">
+      </div>
+      <div class="hero-vet-content">
+        <h1>Comprehensive Veterinary Care</h1>
+        <p>Quality medical care from experienced veterinarians who truly care about your pet's health and happiness</p>
+        <div class="hero-buttons">
+          <button onclick="openLeadPopup()" class="btn btn-primary">Book Appointment</button>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section>
+    <div class="section-container">
+      <div class="content-narrow">
+        <h2 class="section-title">Your Pet's Health is Our Priority</h2>
+        <p class="text-intro">
+          Our state-of-the-art veterinary clinic offers comprehensive medical care for your pets. From routine wellness exams to 
+          advanced diagnostics and surgical procedures, our experienced veterinary team is dedicated to keeping your furry family 
+          members healthy and happy throughout their lives.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="bg-light-blue" id="services">
+    <div class="section-container">
+      <h2 class="section-title">Our Veterinary Services</h2>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle orange-bg">
+              <i data-lucide="stethoscope"></i>
+            </div>
+            <h3 class="card-title">Wellness Exams</h3>
+            <p class="card-text">Regular check-ups to maintain your pet's health and catch potential issues early.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle blue-bg">
+              <i data-lucide="syringe"></i>
+            </div>
+            <h3 class="card-title">Vaccinations</h3>
+            <p class="card-text">Core and non-core vaccines to protect your pet from preventable diseases.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle orange-bg">
+              <i data-lucide="microscope"></i>
+            </div>
+            <h3 class="card-title">Diagnostic Testing</h3>
+            <p class="card-text">Advanced lab work, imaging, and diagnostic tools for accurate diagnoses.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle blue-bg">
+              <i data-lucide="scissors"></i>
+            </div>
+            <h3 class="card-title">Surgery</h3>
+            <p class="card-text">Spay/neuter procedures and other surgical services with comprehensive care.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle orange-bg">
+              <i data-lucide="pill"></i>
+            </div>
+            <h3 class="card-title">Dental Care</h3>
+            <p class="card-text">Professional teeth cleaning and oral health maintenance for your pet.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon-card">
+            <div class="icon-circle blue-bg">
+              <i data-lucide="alert-circle"></i>
+            </div>
+            <h3 class="card-title">Emergency Care</h3>
+            <p class="card-text">24/7 emergency services for urgent medical situations and accidents.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness Plans -->
+  <section>
+    <div class="section-container">
+      <h2 class="section-title">Wellness Plans</h2>
+      <p class="section-subtitle">Affordable preventive care packages designed for every life stage</p>
+      
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="plan-card">
+            <i data-lucide="baby" class="plan-icon"></i>
+            <h3 class="card-title">Puppy/Kitten Plan</h3>
+            <p class="card-text" style="margin-bottom: 1.5rem;">For pets under 1 year old</p>
+            <ul class="plan-list">
+              <li>✓ Series of vaccinations</li>
+              <li>✓ Monthly wellness exams</li>
+              <li>✓ Parasite prevention</li>
+              <li>✓ Nutritional counseling</li>
+              <li>✓ Spay/neuter discount</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="plan-card">
+            <i data-lucide="heart" class="plan-icon" style="color: #0288D1;"></i>
+            <h3 class="card-title">Adult Plan</h3>
+            <p class="card-text" style="margin-bottom: 1.5rem;">For pets 1-7 years old</p>
+            <ul class="plan-list">
+              <li>✓ Annual wellness exam</li>
+              <li>✓ Vaccinations</li>
+              <li>✓ Blood work screening</li>
+              <li>✓ Dental cleaning</li>
+              <li>✓ 10% off services</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="plan-card">
+            <i data-lucide="star" class="plan-icon"></i>
+            <h3 class="card-title">Senior Plan</h3>
+            <p class="card-text" style="margin-bottom: 1.5rem;">For pets 7+ years old</p>
+            <ul class="plan-list">
+              <li>✓ Bi-annual wellness exams</li>
+              <li>✓ Comprehensive blood work</li>
+              <li>✓ Senior screenings</li>
+              <li>✓ Dental care</li>
+              <li>✓ 15% off medications</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="wave-bg" style="position: relative;">
+    <svg style="position: absolute; bottom: 0; left: 0; right: 0;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 500,0 800,60 C1000,100 1100,40 1200,60 L1200,120 L0,120 Z" fill="white" />
+    </svg>
+    
+    <div class="section-container" style="position: relative; z-index: 10;">
+      <h2 class="section-title">What to Expect at Your Visit</h2>
+      
+      <div class="grid grid-2">
+        <div class="values-item">
+          <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 3rem; height: 3rem; background: #FF7043; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <span style="color: white; font-weight: bold; font-size: 1.25rem;">1</span>
+            </div>
+            <div>
+              <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Check-In</h3>
+              <p style="color: #4b5563;">Arrive 10 minutes early to complete any paperwork. Our friendly staff will greet you and your pet.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 3rem; height: 3rem; background: #FF7043; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <span style="color: white; font-weight: bold; font-size: 1.25rem;">2</span>
+            </div>
+            <div>
+              <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Examination</h3>
+              <p style="color: #4b5563;">Our veterinarian will perform a thorough physical exam and discuss your pet's health history.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 1rem;">
+            <div style="width: 3rem; height: 3rem; background: #FF7043; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <span style="color: white; font-weight: bold; font-size: 1.25rem;">3</span>
+            </div>
+            <div>
+              <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Treatment Plan</h3>
+              <p style="color: #4b5563;">We'll explain our findings and recommend a personalized treatment or preventive care plan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="values-item">
+          <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 3rem; height: 3rem; background: #0288D1; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <span style="color: white; font-weight: bold; font-size: 1.25rem;">4</span>
+            </div>
+            <div>
+              <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Questions</h3>
+              <p style="color: #4b5563;">We encourage questions! Our team will answer all your concerns about your pet's health and care.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 3rem; height: 3rem; background: #0288D1; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <span style="color: white; font-weight: bold; font-size: 1.25rem;">5</span>
+            </div>
+            <div>
+              <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Follow-Up</h3>
+              <p style="color: #4b5563;">We'll schedule any necessary follow-up appointments and provide take-home care instructions.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 1rem;">
+            <div style="width: 3rem; height: 3rem; background: #0288D1; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <span style="color: white; font-weight: bold; font-size: 1.25rem;">6</span>
+            </div>
+            <div>
+              <h3 style="font-weight: bold; color: #1f2937; margin-bottom: 0.5rem;">Checkout</h3>
+              <p style="color: #4b5563;">Our staff will handle payment and provide you with a detailed visit summary and receipts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Section -->
+  <section>
+    <div class="section-container">
+      <div class="info-box" style="background: #FEE2E2; border-left: 4px solid #EF4444;">
+        <h2 style="color: #991B1B; font-size: 1.875rem; font-weight: bold; margin-bottom: 1rem;">
+          <i data-lucide="alert-triangle" style="width: 2rem; height: 2rem; display: inline-block; vertical-align: middle; margin-right: 0.5rem;"></i>
+          Emergency Services Available 24/7
+        </h2>
+        <p style="color: #7F1D1D; font-size: 1.125rem; line-height: 1.75; margin-bottom: 1rem;">
+          If your pet is experiencing a medical emergency, call us immediately at <strong>1-888-332-7387</strong>. 
+          Our emergency veterinary team is available around the clock to provide urgent care when your pet needs it most.
+        </p>
+        <p style="color: #7F1D1D; font-weight: 600;">
+          Common emergencies include: severe bleeding, difficulty breathing, seizures, suspected poisoning, severe vomiting/diarrhea, 
+          inability to urinate, eye injuries, or collapse.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(to bottom right, #0288D1, #0277BD); position: relative; overflow: hidden;">
+    <svg style="position: absolute; top: 0; left: 0; right: 0;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,0 500,120 800,60 C1000,20 1100,80 1200,60 L1200,0 L0,0 Z" fill="white" />
+    </svg>
+    
+    <div class="section-container text-center" style="position: relative; z-index: 10; color: white;">
+      <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Schedule Your Pet's Wellness Exam</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">Prevention is the best medicine. Book your appointment today.</p>
+      <button onclick="openLeadPopup()" class="btn btn-primary">Book Appointment</button>
+    </div>
+  </section>
+
+  <!-- Lead Popup -->
+  <div id="lead-popup" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeLeadPopup()" aria-label="Close">&times;</button>
+      <h2 style="margin-bottom: 1rem; color: #1f2937;">Get Started with FurryFriends</h2>
+      <p style="margin-bottom: 1.5rem; color: #6b7280;">Fill out the form below and we'll get back to you within 24 hours.</p>
+      
+      <form onsubmit="submitLeadForm(event)">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address *</label>
+          <input type="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" name="phone" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Pet Type</label>
+          <select name="petType" class="form-select">
+            <option value="">Select pet type</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Service Interested In</label>
+          <select name="service" class="form-select">
+            <option value="">Select a service</option>
+            <option value="walking">Dog Walking</option>
+            <option value="sitting">Pet Sitting</option>
+            <option value="daycare">Pet Day Care</option>
+            <option value="overnight">Overnight Care</option>
+            <option value="grooming">Pet Grooming</option>
+            <option value="training">Pet Training</option>
+            <option value="vetcare">Veterinary Care</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Additional Information</label>
+          <textarea name="message" class="form-textarea" placeholder="Tell us about your pet's needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>FurryFriends CareServices</h3>
+          <p>Professional pet care services you can trust. We treat your pets like family.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="vet-care.html">Vet Care</a>
+          <a href="blog.html">Blog</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@furryfriends.com</p>
+          <p>Phone: 1-888-332-7387</p>
+          <p>Available 24/7</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurryFriends CareServices. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div>
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">We use cookies</p>
+        <p style="color: #6b7280; font-size: 0.875rem;">We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn btn-primary">Accept</button>
+        <button onclick="declineCookies()" class="btn" style="background: #e5e7eb; color: #374151;">Decline</button>
+        <a href="cookie-policy.html" style="color: #0288D1; text-decoration: none; padding: 0.75rem;">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
